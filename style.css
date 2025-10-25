@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+.join-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #007acc;
+}
+
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("hero-bg.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    color: #000;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.sub-title {
+    font-size: 28px;
+    color: #0088cc;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .hero {
+        padding: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-title {
+        font-size: 32px;
+    }
+    .sub-title {
+        font-size: 22px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
+
+
+/* About Page */
+
+.about-section {
+    padding: 120px 80px;
+    background-color: #f9fafc;
+    min-height: 100vh;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 42px;
+    color: #0088cc;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.nav-links .active {
+    color: #0088cc;
+}
+
+
+/* Programs Page */
+
+.programs-section {
+    padding: 120px 80px;
+    background-color: #faf8e8;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.programs-section h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.program-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.read-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.read-btn:hover {
+    background-color: #007acc;
+}
